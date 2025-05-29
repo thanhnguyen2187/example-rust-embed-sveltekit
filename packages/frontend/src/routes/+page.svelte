@@ -6,15 +6,16 @@ async function fetchData() {
 </script>
 
 <div class="prose max-w-none">
-    <h1>Example Rust Embed SvelteKit Project</h1>
+    <h1>SPA Frontend</h1>
 
     <p>
         {#await fetchData()}
-            Loading... (should take precisely 3 seconds)
+            Fetching data from <code>/api/data</code> <br/>
+            (should take precisely 3 seconds)
         {:then data}
             {data}
         {/await}
     </p>
 
-    <a href="child-url">Going to another route</a>
+    <a href="child-url">Go to another route</a>
 </div>

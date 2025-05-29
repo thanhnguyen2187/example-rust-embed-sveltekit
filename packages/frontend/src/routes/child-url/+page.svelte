@@ -1,4 +1,8 @@
 <script lang="ts">
 </script>
 
-<div>Should work, too</div>
+<div class="prose">
+    <p>Child route should work as expected</p>
+
+    <a href="/">Go back</a>
+</div>
