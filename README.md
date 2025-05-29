@@ -23,17 +23,14 @@ moon run backend:install
 moon run frontend:install
 ```
 
-- Start development:
-
-Run these two commands in separate files:
-
-  - Start the backend:
+- Start the servers:
+  - Backend:
 
   ```shell
   moon run backend:serve
   ```
 
-  - Start the frontend building process:
+  - Frontend building:
 
   ```shell
   moon run frontend:serve
