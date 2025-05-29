@@ -1,0 +1,5 @@
+tasks:
+  build:
+    command: 'cargo build --release'
+    deps:
+      - 'frontend:build'
