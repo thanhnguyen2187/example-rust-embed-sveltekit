@@ -1,3 +1,9 @@
 tasks:
+  install:
+    command: 'npx pnpm install'
+
   build:
     command: 'npm run build'
+
+  serve:
+    command: 'npx vite build --watch'
