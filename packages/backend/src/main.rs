@@ -10,7 +10,7 @@ async fn main() {
             get(async || {
                 tokio::time::sleep(std::time::Duration::from_secs(3)).await;
 
-                "some arbitrary data"
+                "text data after 3 seconds"
             }),
         )
         .fallback(frontend::static_handler);
