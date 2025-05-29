@@ -8,9 +8,13 @@ async function fetchData() {
 <div class="prose max-w-none">
     <h1>Example Rust Embed SvelteKit Project</h1>
 
-    {#await fetchData()}
-        Loading... (should take precisely 3 seconds)
-    {:then data}
-        {data}
-    {/await}
+    <p>
+        {#await fetchData()}
+            Loading... (should take precisely 3 seconds)
+        {:then data}
+            {data}
+        {/await}
+    </p>
+
+    <a href="child-url">Going to another route</a>
 </div>
