@@ -2,6 +2,8 @@
 
 A demonstration project to show how to serve an SPA from the backend.
 
+![](demo.gif)
+
 Technical stack:
 
 - Moon: task runner and monorepo management
