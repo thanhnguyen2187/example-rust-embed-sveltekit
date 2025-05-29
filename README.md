@@ -1,14 +1,53 @@
 # Example Rust Embed SvelteKit
 
+A demonstration project to show how to serve an SPA from the backend.
+
+Technical stack:
+
+- Moon: task runner and monorepo management
+- Rust + Axum: backend
+- SvelteKit + DaisyUI + TailwindCSS: frontend
+
+## Development
+
+- Make sure that you have related tools available:
+
+  - `moon`
+  - `cargo` and `rustc`
+  - `pnpm`
+
 - Install dependencies:
 
 ```shell
-# TODO
+moon run backend:install
+moon run frontend:install
 ```
 
 - Start development:
 
+Run these two commands in separate files:
+
+  - Start the backend:
+
+  ```shell
+  moon run backend:serve
+  ```
+
+  - Start the frontend building process:
+
+  ```shell
+  moon run frontend:serve
+  ```
+
+## Production Build
+
 ```shell
-# TODO
+moon run backend:build
 ```
 
+Test starting binary:
+
+```shell
+./packages/backend/target/release/backend
+# Listening on http://127.0.0.1:3000
+```
